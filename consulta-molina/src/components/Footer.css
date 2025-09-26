@@ -1,0 +1,159 @@
+.footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 60px 100px 30px;
+  margin-top: 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  max-width: 350px;
+}
+
+/* .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo-circle {
+  width: 50px;
+  height: 50px;
+  background: #20B2AA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo .logo-icon {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+} */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-image {
+  width: 50%;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-description {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.footer-contact h4,
+.footer-social h4 {
+  color: #20B2AA;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  color: #ccc;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #08302e;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    max-width: none;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+  .footer-logo-image {
+    width: 40%;
+    margin-right: 60px;
+    transform: translateX(20%);
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  .footer-content {
+    gap: 30px;
+  }
+  
+  .footer-logo .logo-circle {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-logo .logo-icon {
+    font-size: 1.5rem;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+  }
+}
