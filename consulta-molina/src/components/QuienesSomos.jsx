@@ -16,10 +16,16 @@ const QuienesSomos = () => {
           </div>
           <div className="team-info">
             <p className="team-description">
-              Somos un equipo de profesionales especializados en psicoterapia y consulta familiar, comprometidos con brindar atención de calidad y apoyo integral a nuestros pacientes.
+              Somos un equipo de psicoterapeutas comprometidos con un proceso terapéutico que
+              comienza con el respeto profundo hacia la historia de cada persona. Nos dedicamos a
+              ofrecer un acompañamiento cercano, discreto y humano, donde la escucha activa se
+              convierte en el punto de partida para el crecimiento personal.
             </p>
             <p className="team-description">
-              Con años de experiencia en el campo de la salud mental, trabajamos con dedicación para ofrecer un espacio seguro y profesional donde cada persona pueda encontrar el apoyo que necesita.
+              Creamos espacios seguros y sin juicios, donde el diálogo se construye con calidez,
+              contención emocional y profesionalismo. Nuestra práctica se fundamenta en la evidencia
+              científica, guiada por una vocación académica y ética que prioriza el bienestar y el desarrollo
+              integral del ser humano.
             </p>
             <div className="team-features">
               <div className="feature-item">

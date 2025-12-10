@@ -14,7 +14,7 @@
 
 .contacto-image img {
   width: 100%;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -115,12 +115,17 @@
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+@media (max-width: 1260px) {
+  .contacto-grid {
+    padding-left: 20px
+  }
+}
 @media (max-width: 768px) {
   .contacto-grid {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    padding-left: 0px;
   }
   
   .info-header {

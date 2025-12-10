@@ -52,7 +52,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const checkDevice = () => {
-      setIsMobile(window.innerWidth <= 768); // si es menor o igual a 768px lo consideramos móvil
+      setIsMobile(window.innerWidth <= 1160); // si es menor o igual a 1160px lo consideramos móvil
     };
 
     checkDevice();
@@ -94,7 +94,7 @@ const Navbar = () => {
       path: '/servicios#neuropsicologia-deportiva',
     },
     { 
-      name: 'VITAE Orientación Vocacional', 
+      name: 'Orientación Vocacional', 
       dropdown: [
         { name: 'VITAE - Servicio de Orientación Vocacional', path: '/servicios#VITAE' },
         { name: 'Charlas y Talleres a Colegios Padres e Hijos', path: '/servicios#VITAE' },

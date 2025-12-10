@@ -1,5 +1,6 @@
 .quienes-somos {
   background: #f8f9fa;
+  
 }
 
 .quienes-content {
@@ -7,6 +8,7 @@
   grid-template-columns: 1fr 1.2fr;
   gap: 60px;
   align-items: center;
+  padding: 0px 30px;
 }
 
 .team-image img {
@@ -55,6 +57,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    padding: 0px;
   }
   
   .team-features {

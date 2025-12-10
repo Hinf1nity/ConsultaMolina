@@ -18,22 +18,20 @@ const Footer = () => {
             <div className="footer-logo">
               <img src={IsoLogo} alt="Molina" className="footer-logo-image" />
             </div>
-            <p className="footer-description">
+            {/* <p className="footer-description">
               Consulta Psicoterapéutica especializada en bienestar mental y familiar.
-            </p>
+            </p> */}
           </div>
           
           <div className="footer-contact">
             <h4>Contacto</h4>
-            <p><FaPhoneAlt color='rgb(0 167 181)'/> +1 (555) 123-4567</p>
-            <p><FaEnvelope color='rgb(0 167 181)'/> info@consultamolina.com</p>
+            <p><FaPhoneAlt color='rgb(0 167 181)'/> +591 72564060</p>
+            <p><FaEnvelope color='rgb(0 167 181)'/> molina.psicoterapia@gmail.com</p>
           </div>
           
           <div className="footer-social">
             <h4>Síguenos</h4>
             <div className="social-links">
-              <a href="#" className="social-link"><FaFacebook color='rgb(0 167 181)' size={30}/></a>
-              <a href="#" className="social-link"><FaInstagram color='rgb(0 167 181)' size={30}/></a>
               <a href="#" className="social-link"><FaLinkedin color='rgb(0 167 181)' size={30}/></a>
             </div>
           </div>

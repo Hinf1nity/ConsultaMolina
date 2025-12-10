@@ -8,11 +8,19 @@ const UbicacionContacto = () => {
       <div className="container">
         <h2 className="section-title">Ubicación y Contacto</h2>
         <div className="contacto-grid">
-          <div className="contacto-image">
-            <img 
-              src="https://images.pexels.com/photos/273204/pexels-photo-273204.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
-              alt="Ubicación consulta Molina" 
-            />
+          <div>
+            <div className="contacto-image">
+              <img 
+                src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=hj0Fjz3rdv7Nv9VjFib46w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=245.20615&pitch=0&thumbfov=100&w=600&h=400&fit=crop" 
+                alt="Ubicación consulta Molina" 
+              />
+            </div>
+            <div className="contacto-image">
+              <img 
+                src="https://equimin.com.bo/images/01.jpg" 
+                alt="Ubicación consulta Molina" 
+              />
+            </div>
           </div>
           <div className="contacto-info">
             <div className="info-header">
@@ -27,7 +35,8 @@ const UbicacionContacto = () => {
                 <div className="contacto-icon"><FaLocationDot color='rgb(0 131 138)'/></div>
                 <div className="contacto-text">
                   <strong>Dirección</strong>
-                  <p>Calle Dr. Centro Médico, Piso 3, Oficina 301</p>
+                  <p>Unimed, Av Arce 2630 frente al Multicine</p>
+                  <p>Shopping Sur, Av Arequipa . Zona La Florida</p>
                 </div>
               </div>
               
@@ -35,7 +44,7 @@ const UbicacionContacto = () => {
                 <div className="contacto-icon"><FaPhoneAlt color='rgb(0 167 181)'/></div>
                 <div className="contacto-text">
                   <strong>Teléfono</strong>
-                  <p>+1 (555) 123-4567</p>
+                  <p>+591 72564060</p>
                 </div>
               </div>
               
@@ -43,7 +52,7 @@ const UbicacionContacto = () => {
                 <div className="contacto-icon"><FaEnvelope color='rgb(184 97 37)'/></div>
                 <div className="contacto-text">
                   <strong>Email</strong>
-                  <p>info@consultamolina.com</p>
+                  <p>molina.psicoterapia@gmail.com</p>
                 </div>
               </div>
               
@@ -59,8 +68,6 @@ const UbicacionContacto = () => {
             <div className="redes-sociales">
               <h4>Redes Sociales</h4>
               <div className="social-links">
-                <a href="#" className="social-link-ubicacion-contacto"><FaFacebook color='rgb(0 167 181)' size={38}/></a>
-                <a href="#" className="social-link-ubicacion-contacto"><FaInstagram color='rgb(0 167 181)' size={38}/></a>
                 <a href="#" className="social-link-ubicacion-contacto"><FaLinkedin color='rgb(0 167 181)' size={38}/></a>
                 <a href="#" className="social-link-ubicacion-contacto"><FaWhatsapp color='rgb(0 167 181)' size={38}/></a>
               </div>

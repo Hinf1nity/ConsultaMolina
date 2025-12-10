@@ -16,7 +16,11 @@ const MisionVision = () => {
             </div>
             <h3>Misión</h3>
             <p>
-              Proporcionar servicios de psicoterapia y consulta familiar de alta calidad, promoviendo el bienestar emocional y mental de nuestros pacientes a través de un enfoque integral, profesional y humanizado.
+              Brindamos servicios de psicoterapia y consulta familiar de alta calidad, promoviendo el
+              bienestar emocional y relacional de las personas, parejas y familias a través de un enfoque
+              integral, profesional y humanizado. Nuestra labor se sustenta en el valor del vínculo
+              terapéutico, la evidencia científica y una vocación ética y empática que favorece el
+              crecimiento personal y el desarrollo integral.
             </p>
           </div>
           <div className="card vision-card">
@@ -27,7 +31,11 @@ const MisionVision = () => {
             </div>
             <h3>Visión</h3>
             <p>
-              Ser reconocidos como un centro de referencia en salud mental, contribuyendo al desarrollo de familias y comunidades más saludables y resilientes a través de nuestros servicios especializados.
+              Ser un referente en atención psicoterapéutica, reconocido por un abordaje humano, ético y
+              científicamente fundamentado. Aspiramos a fortalecer el bienestar emocional de las
+              personas a través de la construcción de vínculos saludables, contribuyendo a mejorar la
+              calidad de vida de quienes confían en nosotros dentro de un espacio discreto, cálido y
+              transformador.
             </p>
           </div>
         </div>

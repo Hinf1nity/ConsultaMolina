@@ -46,7 +46,7 @@ const ServiceDetails = () => {
         Si, sin embargo lo recomendable es que el paciente interesado se ponga en contacto\n\
         ¿Cuánto dura el tratamiento?\n\
         El número de sesiones se determinará dependiendo del objetivo terapéutico " },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 9AM-6PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" }
       ]
     },
     {
@@ -72,7 +72,7 @@ const ServiceDetails = () => {
           ¿La terapia de pareja contempla temáticas de sexualidad?\n\
           Si\n\
           " },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Mar-Jue 4PM-8PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Mar-Jue 4PM-8PM" }
       ]
     },
     {
@@ -94,7 +94,7 @@ const ServiceDetails = () => {
         Dependiendo la problemática que se quiera tratar\n\
         ¿Las sesiones tienen un costo diferente por número de asistentes a la terapia o a la sesión?\n\
         No, el costo es único" },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Mié 5PM-7PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Mié 5PM-7PM" }
       ]
     },
     {
@@ -117,7 +117,7 @@ const ServiceDetails = () => {
         Menos de 8 años con sus padres y mayores de 12 pueden venir solos\n\
         ¿Se realizan diagnósticos de trastornos u otras enfermedades?\n\
         Si, se realiza una valoración y exploración clínica de los pacientes" },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 3PM-6PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 3PM-6PM" }
       ]
     }
   ];
@@ -128,7 +128,7 @@ const ServiceDetails = () => {
     { icon: FaQuestionCircle, tooltip: "¿Debo encender cámara?\nDepende de la comodidad del paciente" },
     { icon: FaCamera, tooltip: "Plataformas: Zoom, Meet, FaceTime, WhatsApp, Discord, Gather" },
     { icon: FaCircleDollarToSlot, tooltip: "Métodos de pago: Transferencia, QR, Binance, PayPal" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 9AM-6PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" },
   ];
 
   const dueloIcons = [
@@ -138,7 +138,7 @@ const ServiceDetails = () => {
     Si\n\
     ¿Atiende a niños?\n\
     Si" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 9AM-6PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" },
   ];
 
   const neuropsicologiaIcons = [
@@ -149,7 +149,7 @@ const ServiceDetails = () => {
     No, es para todo deportista que desee mejorar su rendimiento\n\
     ¿Se trabaja en consultorio?\n\
     No, se trabaja es un centro de neuropsicología deportiva" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 10AM-5PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 10AM-5PM" },
   ];
 
   const vitaeTypes = [
@@ -176,7 +176,7 @@ const ServiceDetails = () => {
         Cuatro horas\n\
         ¿Cuánto tiempo dura el servicio completo?\n\
         Depende del plan, entre 1 a 3 semanas" },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 9AM-6PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" }
       ]
     },
     {
@@ -200,7 +200,7 @@ const ServiceDetails = () => {
     Padres o tutores\n\
     ¿Es necesario contar con un diagnóstico previo?\n\
     Si, para orientar el trabajo de acompañamiento" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +1 (555) 123-4567 | Horarios: Lun-Vie 3PM-7PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 3PM-7PM" },
   ];
 
   const charlasTalleresTypes = [
