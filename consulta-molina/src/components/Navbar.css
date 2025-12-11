@@ -30,7 +30,7 @@
   gap: 50px;
   align-items: center;
   justify-content: center;
-  transform: translateX(30px);
+  transform: translateX(80px);
 }
 
 .nav-item {
@@ -140,7 +140,10 @@
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1360px) {
+  .navbar-menu {
+    gap: 30px;
+  }
   .nav-link {
     padding: 8px 10px;
     font-size: 13px;

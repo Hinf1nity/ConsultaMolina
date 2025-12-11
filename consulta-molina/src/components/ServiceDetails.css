@@ -421,6 +421,9 @@
 }
 
 @media (max-width: 768px) {
+  .service-details{
+    padding-right: 8%;
+  }
   .service-content,
   .service-content.reverse {
     grid-template-columns: 1fr;
@@ -487,6 +490,12 @@
   
   .service-description {
     text-align: left;
+  }
+}
+
+@media (max-width: 570px) {
+  .service-details{
+    padding-right: 5%;
   }
 }
 

@@ -6,6 +6,14 @@ import { FaHouse, FaRainbow, FaPeopleArrows, FaCircleDollarToSlot, FaC  } from "
 import { BsBuildingsFill } from "react-icons/bs";
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import PsicoterapiaImg from '../imgs/psicoterapia.png'
+import PsicoterapiaLineaImg from '../imgs/psicoterapia_linea.jpg'
+import TerapiaFamiliarImg from '../imgs/psicoterapia_familiar.png'
+import NeuropsicologiaDeportivaImg from '../imgs/neuropsicologia_deportiva.png'
+import OrientacionVocacionalImg from '../imgs/orientacion_vocacional.png'
+import JuventudDiversidadImg from '../imgs/juventud_diversidad.png'
+import DueloImg from '../imgs/duelo.png'
+import CharlasTalleresImg from '../imgs/charlas_talleres.jpg'
 
 const ServiceDetails = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -46,7 +54,7 @@ const ServiceDetails = () => {
         Si, sin embargo lo recomendable es que el paciente interesado se ponga en contacto\n\
         ¿Cuánto dura el tratamiento?\n\
         El número de sesiones se determinará dependiendo del objetivo terapéutico " },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" }
       ]
     },
     {
@@ -72,7 +80,7 @@ const ServiceDetails = () => {
           ¿La terapia de pareja contempla temáticas de sexualidad?\n\
           Si\n\
           " },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Mar-Jue 4PM-8PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" }
       ]
     },
     {
@@ -94,7 +102,7 @@ const ServiceDetails = () => {
         Dependiendo la problemática que se quiera tratar\n\
         ¿Las sesiones tienen un costo diferente por número de asistentes a la terapia o a la sesión?\n\
         No, el costo es único" },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Mié 5PM-7PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" }
       ]
     },
     {
@@ -104,7 +112,7 @@ const ServiceDetails = () => {
       primeras etapas de la crianza hasta los desafíos propios de la\
       transición a la vida adulta. En este espacio se abordan\
       problemáticas conductuales, educativas, emocionales y sociales,\
-      con el fin impulsar un desarrollo destacable y equilibrado. Cuando\
+      con el fin de impulsar un desarrollo destacable y equilibrado. Cuando\
       corresponde, se realiza una evaluación seguida de un diagnóstico\
       interdisciplinario que permite diseñar una intervención integral y\
       efectiva. También se trabajan temas relacionados con la\
@@ -117,7 +125,7 @@ const ServiceDetails = () => {
         Menos de 8 años con sus padres y mayores de 12 pueden venir solos\n\
         ¿Se realizan diagnósticos de trastornos u otras enfermedades?\n\
         Si, se realiza una valoración y exploración clínica de los pacientes" },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 3PM-6PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" }
       ]
     }
   ];
@@ -127,8 +135,8 @@ const ServiceDetails = () => {
     { icon: FaLanguage, tooltip: "Atención en Español e Inglés" },
     { icon: FaQuestionCircle, tooltip: "¿Debo encender cámara?\nDepende de la comodidad del paciente" },
     { icon: FaCamera, tooltip: "Plataformas: Zoom, Meet, FaceTime, WhatsApp, Discord, Gather" },
-    { icon: FaCircleDollarToSlot, tooltip: "Métodos de pago: Transferencia, QR, Binance, PayPal" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" },
+    { icon: FaCircleDollarToSlot, tooltip: "Métodos de pago: Transferencia, QR, Binance, PayPal, Takenos" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" },
   ];
 
   const dueloIcons = [
@@ -138,7 +146,7 @@ const ServiceDetails = () => {
     Si\n\
     ¿Atiende a niños?\n\
     Si" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" },
   ];
 
   const neuropsicologiaIcons = [
@@ -149,7 +157,7 @@ const ServiceDetails = () => {
     No, es para todo deportista que desee mejorar su rendimiento\n\
     ¿Se trabaja en consultorio?\n\
     No, se trabaja es un centro de neuropsicología deportiva" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 10AM-5PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" },
   ];
 
   const vitaeTypes = [
@@ -176,7 +184,7 @@ const ServiceDetails = () => {
         Cuatro horas\n\
         ¿Cuánto tiempo dura el servicio completo?\n\
         Depende del plan, entre 1 a 3 semanas" },
-        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 9AM-6PM" }
+        { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060" }
       ]
     },
     {
@@ -200,7 +208,7 @@ const ServiceDetails = () => {
     Padres o tutores\n\
     ¿Es necesario contar con un diagnóstico previo?\n\
     Si, para orientar el trabajo de acompañamiento" },
-    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 3PM-7PM" },
+    { icon: FaCalendarAlt, tooltip: "Contacto: +591 72564060 | Horarios: Lun-Vie 8AM-10PM y Sáb 9AM-2PM" },
   ];
 
   const charlasTalleresTypes = [
@@ -210,7 +218,7 @@ const ServiceDetails = () => {
       edad.\n\
       Abarca las siguientes temáticas:",
       bullets: [
-        "Las esferas del ser humano: bio–psico–social",
+        "Las esferas del ser humano: bio-psico-social",
         "Manejo de crisis en la vida",
         "Estilos educativos",
         "Problemáticas de la actualidad"
@@ -229,10 +237,10 @@ const ServiceDetails = () => {
       del espectro autista.\n\
       Abarca las siguientes temáticas:",
       bullets: [
-        "Criterios del autismo",
+        "Características del autismo",
         "Manejo general del autismo",
         "Manejo de crisis en el autismo",
-        "Manejo en aula del autismo"
+        "Manejo escolar del autismo"
       ],
       finalDescription: "El taller brinda al profesorado una comprensión clara de la base teórica del espectro autista,\
       junto con herramientas prácticas y eficientes para el manejo general, la atención en crisis y\
@@ -313,7 +321,7 @@ const ServiceDetails = () => {
           <div className="service-content">
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src={PsicoterapiaImg} 
                 alt="Psicoterapia"
               />
             </div>
@@ -412,7 +420,7 @@ const ServiceDetails = () => {
             </div>
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                src={PsicoterapiaLineaImg}
                 alt="Psicoterapia en Línea" 
               />
             </div>
@@ -433,8 +441,8 @@ const ServiceDetails = () => {
           <div className="service-content">
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/4101137/pexels-photo-4101137.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
-                alt="Terapia de Pareja" 
+                src={DueloImg}
+                alt="Duelo" 
               />
             </div>
             <div className="service-info">
@@ -486,7 +494,7 @@ const ServiceDetails = () => {
             <div className="service-info">
               <p className="service-description">
                 Ofrecemos un centro de entrenamiento neuropsicológico dirigido a
-                deportistas y atletas, desde las edades iniciales hasta el nivel profesional.
+                deportistas y atletas, desde los 6 años.
                 Entrenamos directamente el cerebro del atleta como parte de un proceso
                 integral que complementa la preparación física y técnica de su deporte. A
                 través de ejercicios especializados se fortalecen funciones como la atención,
@@ -519,7 +527,7 @@ const ServiceDetails = () => {
             </div>
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src={NeuropsicologiaDeportivaImg} 
                 alt="Neuropsicología Deportiva" 
               />
             </div>
@@ -540,7 +548,7 @@ const ServiceDetails = () => {
           <div className="service-content">
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src={OrientacionVocacionalImg} 
                 alt="Orientación Vocacional"
               />
             </div>
@@ -636,7 +644,7 @@ const ServiceDetails = () => {
             </div>
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src={JuventudDiversidadImg}
                 alt="Juventud en la Diversidad" 
               />
             </div>
@@ -657,7 +665,7 @@ const ServiceDetails = () => {
           <div className="service-content">
             <div className="service-image">
               <img 
-                src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src={CharlasTalleresImg}
                 alt="Charlas y Talleres"
               />
             </div>

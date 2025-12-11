@@ -1,6 +1,7 @@
 import './QuienesSomos.css'
 import { FaHeart } from "react-icons/fa6";
 import { FaShieldAlt } from "react-icons/fa";
+import quienes_somos2 from '../imgs/quienes_somos2.jpg'
 
 const QuienesSomos = () => {
   return (
@@ -10,7 +11,7 @@ const QuienesSomos = () => {
         <div className="quienes-content">
           <div className="team-image">
             <img 
-              src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+              src={quienes_somos2}
               alt="Equipo de profesionales" 
             />
           </div>

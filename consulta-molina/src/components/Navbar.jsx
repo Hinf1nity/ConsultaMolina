@@ -71,49 +71,42 @@ const Navbar = () => {
   }, [location])
 
   const navItems = [
+    {
+      name: 'Quiénes Somos',
+      path: '/quienes-somos',
+    },
     { 
       name: 'Psicoterapia', 
       dropdown: [
         { name: 'Psicoterapia Individual', path: '/servicios#psicoterapia' },
         { name: 'Psicoterapia de Pareja', path: '/servicios#psicoterapia' },
-        { name: 'Psicoterapia Familiar', path: '/servicios#psicoterapia' },
         { name: 'Psicoterapia Infantojuvenil', path: '/servicios#psicoterapia' },
-        { name: 'Duelo', path: '/servicios#duelo' },
       ]
     },
     { 
       name: 'Psicoterapia en Línea', 
       path: '/servicios#psicoterapia-linea',
     },
-    { 
-      name: 'Profesionales', 
-      path: '/profesionales',
+    {
+      name: 'Terapia Familiar',
+      path: '/servicios#psicoterapia'
     },
     { 
       name: 'Neuropsicología Deportiva', 
       path: '/servicios#neuropsicologia-deportiva',
     },
-    { 
-      name: 'Orientación Vocacional', 
-      dropdown: [
-        { name: 'VITAE - Servicio de Orientación Vocacional', path: '/servicios#VITAE' },
-        { name: 'Charlas y Talleres a Colegios Padres e Hijos', path: '/servicios#VITAE' },
-      ]
-    },
-    { 
-      name: 'Juventud en la Diversidad', 
-      path: '/servicios#juventud-diversidad',
+    {
+      name: 'Duelo',
+      path: '/servicios#duelo'
     },
     {
-      name: 'Charlas y Talleres',
+      name: 'Otros Servicios',
       dropdown: [
-        { name: 'Creciendo juntos: de la familia a la independencia', path: '/servicios#charlas-talleres' },
-        { name: 'Manejo escolar del autismo', path: '/servicios#charlas-talleres' },
-        { name: 'Neuropsicología deportiva', path: '/servicios#charlas-talleres' },
-        { name: 'Educar en libertad con autonomía', path: '/servicios#charlas-talleres' },
-        { name: 'Problemas de chicas: el complicado mundo de las mujeres', path: '/servicios#charlas-talleres' },
+        { name: 'Orientación Vocacional', path: '/servicios#VITAE' },
+        { name: 'Juventud en la Diversidad', path: '/servicios#juventud-diversidad' },
+        { name: 'Charlas y Talleres', path: '/servicios#charlas-talleres' },
       ]
-    }
+    },
   ]
 
   const handleDropdownEnter = (index) => {

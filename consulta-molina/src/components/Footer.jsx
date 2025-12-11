@@ -25,7 +25,7 @@ const Footer = () => {
           
           <div className="footer-contact">
             <h4>Contacto</h4>
-            <p><FaPhoneAlt color='rgb(0 167 181)'/> +591 72564060</p>
+            <p><FaPhoneAlt color='rgb(0 167 181)'/> +591 72564060, +591 67025984, +591 72533356</p>
             <p><FaEnvelope color='rgb(0 167 181)'/> molina.psicoterapia@gmail.com</p>
           </div>
           

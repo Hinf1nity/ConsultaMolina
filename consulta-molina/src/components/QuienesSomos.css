@@ -6,14 +6,15 @@
 .quienes-content {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  /* gap: 60px; */
   align-items: center;
   padding: 0px 30px;
 }
 
 .team-image img {
-  width: 100%;
-  height: 400px;
+  transform: translateX(40%);
+  width: 60%;
+  /* height: 400px; */
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -52,7 +53,18 @@
   color: #333;
 }
 
+@media (max-width: 1230px) {
+  .team-image img {
+    transform: translateX(20%);
+    width: 70%;
+  }
+}
+
 @media (max-width: 768px) {
+
+  .team-image img {
+    transform: translateX(0);
+  }
   .quienes-content {
     grid-template-columns: 1fr;
     gap: 40px;

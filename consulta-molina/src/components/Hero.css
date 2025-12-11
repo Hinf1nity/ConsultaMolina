@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://storage.googleapis.com/uxpilot-auth.appspot.com/a1b4ac31dc-ce70a409ecd236680dc5.png');
+  background-image: url('../imgs/portada.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.5;
@@ -145,6 +145,14 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 40vh;
+    margin-top: 100px;
+  }
+  
+  .hero-content {
+    transform: translateY(20px);
+  }
   .hero-title {
     font-size: 2rem;
   }

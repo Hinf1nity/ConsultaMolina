@@ -1,7 +1,7 @@
 import './UbicacionContacto.css'
 import { FaLocationDot, FaClock } from "react-icons/fa6";
 import { FaPhoneAlt, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
+import LocacionImg from '../imgs/locacion.jpg'
 const UbicacionContacto = () => {
   return (
     <section id="ubicacion-contacto" className="section ubicacion-contacto">
@@ -11,7 +11,7 @@ const UbicacionContacto = () => {
           <div>
             <div className="contacto-image">
               <img 
-                src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=hj0Fjz3rdv7Nv9VjFib46w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=245.20615&pitch=0&thumbfov=100&w=600&h=400&fit=crop" 
+                src={LocacionImg} 
                 alt="Ubicación consulta Molina" 
               />
             </div>
@@ -44,7 +44,7 @@ const UbicacionContacto = () => {
                 <div className="contacto-icon"><FaPhoneAlt color='rgb(0 167 181)'/></div>
                 <div className="contacto-text">
                   <strong>Teléfono</strong>
-                  <p>+591 72564060</p>
+                  <p>+591 72564060, +591 67025984, +591 72533356</p>
                 </div>
               </div>
               
@@ -60,7 +60,7 @@ const UbicacionContacto = () => {
                 <div className="contacto-icon"><FaClock color='rgb(218 75 79)'/></div>
                 <div className="contacto-text">
                   <strong>Horarios de Atención</strong>
-                  <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br />Sábados: 9:00 AM - 2:00 PM</p>
+                  <p>Lunes a Viernes: 8:00 AM - 10:00 PM<br />Sábados: 9:00 AM - 2:00 PM</p>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ const UbicacionContacto = () => {
               <h4>Redes Sociales</h4>
               <div className="social-links">
                 <a href="#" className="social-link-ubicacion-contacto"><FaLinkedin color='rgb(0 167 181)' size={38}/></a>
-                <a href="#" className="social-link-ubicacion-contacto"><FaWhatsapp color='rgb(0 167 181)' size={38}/></a>
+                <a href="https://www.wa.link/tabzda" className="social-link-ubicacion-contacto"><FaWhatsapp color='rgb(0 167 181)' size={38}/></a>
               </div>
             </div>
           </div>
