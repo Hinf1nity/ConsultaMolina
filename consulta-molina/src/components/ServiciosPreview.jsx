@@ -7,7 +7,7 @@ import NeuropsicologiaDeportivaImg from '../imgs/neuropsicologia_deportiva.png'
 import OrientacionVocacionalImg from '../imgs/orientacion_vocacional.png'
 import JuventudDiversidadImg from '../imgs/juventud_diversidad.png'
 import DueloImg from '../imgs/duelo.png'
-import CharlasTalleresImg from '../imgs/charlas_talleres.jpg'
+import CharlasTalleresImg from '../imgs/charlas_talleres_1.jpg'
 
 const ServiciosPreview = () => {
   const servicios = [
@@ -42,7 +42,7 @@ const ServiciosPreview = () => {
       link: '/servicios'
     },
     {
-      title: 'Charlas y Talleres',
+      title: 'Conferencias y Talleres',
       description: 'Conferencia psicoeducativas dirigidas a colegios, empresas, instituciones y comunidades.',
       image: CharlasTalleresImg,
       link: '/servicios'
@@ -58,7 +58,7 @@ const ServiciosPreview = () => {
       description: 'Acompañamiento especializado en procesos de duelo y pérdida con apoyo emocional integral.',
       image: DueloImg,
       link: '/servicios'
-    }
+    },
   ]
 
   return (

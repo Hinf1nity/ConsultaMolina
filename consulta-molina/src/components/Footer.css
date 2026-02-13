@@ -12,6 +12,10 @@
   margin-bottom: 40px;
 }
 
+.contact-item p {
+  white-space: nowrap; /* Evita que el texto salte de línea */
+}
+
 .footer-brand {
   max-width: 350px;
 }
@@ -115,6 +119,10 @@
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+  }
+
+  .contact-item p {
+    font-size: larger;
   }
   
   .footer-brand {

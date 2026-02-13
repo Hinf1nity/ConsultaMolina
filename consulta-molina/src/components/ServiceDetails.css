@@ -407,6 +407,102 @@
   border-top-color: #333;
 }
 
+.specific-services {
+  margin: 25px 0;
+}
+
+.specific-services h3 {
+  font-size: 1.2rem;
+  color: rgb(0, 131, 138); /* Tu azul institucional */
+  margin-bottom: 15px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: justify;
+}
+
+/* Viñeta personalizada con tu color naranja */
+.services-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.specific-services.azul .services-list li::before {
+  color: rgb(0, 131, 138);
+}
+
+/* Color específico para la sección NARANJA (Escolar) */
+.specific-services.naranja .services-list li::before {
+  color: rgb(184, 97, 37);
+}
+
+/* Opcional: También puedes cambiar el color del título H3 para que combine */
+.specific-services.azul h3 { color: rgb(0, 131, 138); }
+.specific-services.naranja h3 { color: rgb(184, 97, 37); }
+
+.services-list li strong {
+  color: #333;
+}
+
+.service-image.talleres-intro-image {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente si el contenedor tiene altura */
+  width: 100%;             /* Asegúrate de que el contenedor ocupe todo el ancho */
+}
+
+.service-image.talleres-intro-image img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.talleres-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Crea columnas automáticamente */
+  gap: 20px;
+  align-items: start;
+}
+
+/* Tarjetas más compactas */
+.psicoterapia-dropdown.compact {
+  margin-bottom: 0; /* El gap del grid maneja el espacio */
+  height: fit-content;
+  background: white;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.psicoterapia-dropdown.compact.is-open {
+  /* grid-row: span 2; Opcional: hace que la tarjeta abierta use más espacio vertical */
+  border-color: rgb(0 131 138);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.compact-bullets {
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -490,6 +586,19 @@
   
   .service-description {
     text-align: left;
+  }
+
+  .service-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .talleres-grid-container {
+    grid-template-columns: 1fr; /* Una sola columna en celulares */
+  }
+
+  .service-image.talleres-intro-image img{
+    width: 100%;
   }
 }
 

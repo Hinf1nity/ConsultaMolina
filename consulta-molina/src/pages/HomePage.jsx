@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className="home-page">
       <Hero />
       <QuienesSomos />
-      <MisionVision />
+      {/* <MisionVision /> */}
       <Valores />
       <ServiciosPreview />
       <Profesionales />

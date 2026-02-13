@@ -81,16 +81,17 @@ const Navbar = () => {
         { name: 'Psicoterapia Individual', path: '/servicios#psicoterapia' },
         { name: 'Psicoterapia de Pareja', path: '/servicios#psicoterapia' },
         { name: 'Psicoterapia Infantojuvenil', path: '/servicios#psicoterapia' },
+        { name: 'Psicoterapia Familiar', path: '/servicios#psicoterapia' },
       ]
     },
     { 
       name: 'Psicoterapia en Línea', 
       path: '/servicios#psicoterapia-linea',
     },
-    {
-      name: 'Terapia Familiar',
-      path: '/servicios#psicoterapia'
-    },
+    // {
+    //   name: 'Terapia Familiar',
+    //   path: '/servicios#psicoterapia'
+    // },
     { 
       name: 'Neuropsicología Deportiva', 
       path: '/servicios#neuropsicologia-deportiva',
@@ -104,7 +105,7 @@ const Navbar = () => {
       dropdown: [
         { name: 'Orientación Vocacional', path: '/servicios#VITAE' },
         { name: 'Juventud en la Diversidad', path: '/servicios#juventud-diversidad' },
-        { name: 'Charlas y Talleres', path: '/servicios#charlas-talleres' },
+        { name: 'Conferencias y Talleres', path: '/servicios#charlas-talleres' },
       ]
     },
   ]

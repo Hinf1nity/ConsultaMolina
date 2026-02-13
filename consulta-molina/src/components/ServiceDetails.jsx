@@ -1,14 +1,13 @@
 import './ServiceDetails.css'
 import { FaBrain, FaUserGraduate, FaChalkboardTeacher, FaHandHoldingHeart } from "react-icons/fa";
-import { FaUser, FaHeart, FaLaptop, FaChevronDown, FaChevronUp, FaLanguage, FaCamera, FaSchool, FaPaw } from "react-icons/fa";
-import { FaClock, FaUsers, FaQuestionCircle, FaPhone, FaCalendarAlt, FaCalendar } from "react-icons/fa";
-import { FaHouse, FaRainbow, FaPeopleArrows, FaCircleDollarToSlot, FaC  } from "react-icons/fa6";
+import { FaUser, FaHeart, FaChevronDown, FaChevronUp, FaLanguage, FaCamera, FaSchool, FaPaw } from "react-icons/fa";
+import { FaClock, FaUsers, FaQuestionCircle, FaCalendarAlt, FaGhost } from "react-icons/fa";
+import { FaHouse, FaRainbow, FaPeopleArrows, FaCircleDollarToSlot, FaGear  } from "react-icons/fa6";
 import { BsBuildingsFill } from "react-icons/bs";
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import PsicoterapiaImg from '../imgs/psicoterapia.png'
 import PsicoterapiaLineaImg from '../imgs/psicoterapia_linea.jpg'
-import TerapiaFamiliarImg from '../imgs/psicoterapia_familiar.png'
 import NeuropsicologiaDeportivaImg from '../imgs/neuropsicologia_deportiva.png'
 import OrientacionVocacionalImg from '../imgs/orientacion_vocacional.png'
 import JuventudDiversidadImg from '../imgs/juventud_diversidad.png'
@@ -303,6 +302,21 @@ const ServiceDetails = () => {
       mamá en su vida cotidiana.\n\
       Después de la charla, los padres contarán con una mayor claridad para acompañar y apoyar a sus hijas en su crecimiento\
       personal y social.",
+    },
+    {
+      title: "Sin miedo, sin vergüenza",
+      description: "Este taller tiene como objetivo acompañar a madres y niñas en el proceso de la primera menstruación, brindando información clara y adecuada a la edad, contención emocional y herramientas prácticas. Buscamos que la menarca sea vivida como un proceso natural, seguro y acompañado, fortaleciendo el vínculo madre-hija y promoviendo una relación saludable con el cuerpo.\n\
+      ¿A quiénes va dirigido?\n\
+      Madres, cuidadoras o figuras significativas y niñas entre los 8 y 13 años.\n\
+      Temas que se abordarán:",
+      bullets: [
+        "Aspectos fisiológicos de la menstruación: Qué es la menstruación, por qué ocurre, cuáles son los cambios corporales esperables y qué puede sentir una niña en esta etapa.",
+        "Recordando la primera menarca: Actividad vivencial con las madres, donde de manera voluntaria podrán compartir cómo fue su primera menstruación, qué emociones experimentaron y quiénes las acompañaron, favoreciendo la empatía y el diálogo intergeneracional.",
+        "“Mi kit de cuidado”: Creación y aprendizaje del uso de un kit básico para la menstruación: qué llevar, cómo usarlo y cómo manejar la situación en distintos contextos (colegio, casa, salidas).",
+        "Carta de la madre a la hija: Espacio íntimo donde la madre podrá escribir una carta expresando apoyo, validación, confianza y acompañamiento, reforzando el vínculo y la seguridad emocional de la niña.",
+        "Señales de alerta: Cuándo es importante consultar al médico o pedir ayuda.",
+        "Miedos, tabúes y vergüenzas: Identificación y normalización de emociones asociadas a la menstruación, desmontando mitos y promoviendo una mirada respetuosa del cuerpo y sus procesos naturales."
+      ]
     }
   ];
 
@@ -653,7 +667,7 @@ const ServiceDetails = () => {
       </section>
 
       {/* Charlas y Talleres */}
-      <section id='charlas-talleres' className="service-section">
+      {/* <section id='charlas-talleres' className="service-section">
         <div className="container">
           <div className="service-header">
             <div className="service-icon">
@@ -708,30 +722,162 @@ const ServiceDetails = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Servicios Adicionales
-      <section className="servicios-adicionales">
+      <section id='charlas-talleres' className="service-section charlas-talleres-grid-view">
         <div className="container">
-          <h2 className="section-title">Servicios Adicionales</h2>
-          <div className="adicionales-grid">
-            <div className="adicional-card">
-              <div className="adicional-icon">
-                <span><FaLaptop color='white'/></span>
-              </div>
-              <h3>Terapia Remota</h3>
-              <p>Sesiones virtuales desde la comodidad de tu hogar</p>
+          {/* Encabezado igual */}
+          <div className="service-header">
+            <div className="service-icon">
+              <span><FaChalkboardTeacher color='white'/></span>
             </div>
-            <div className="adicional-card">
-              <div className="adicional-icon emergencia">
-                <span><FaCalendar color='white'/></span>
+            <h2>Charlas y Talleres</h2>
+          </div>
+          
+          {/* Intro: Imagen y Descripción en una fila superior */}
+          <div className="service-intro">
+            <div className="service-image talleres-intro-image">
+              <img src={CharlasTalleresImg} alt="Charlas y Talleres" />
+            </div>
+            <div className="service-info">
+              <p className="service-description">
+                Nuestras charlas y talleres están diseñados para brindar espacios de aprendizaje, reflexión y crecimiento personal. Abordamos temas diversos como la independencia familiar, el manejo escolar del autismo y neuropsicología deportiva.
+              </p>
+            </div>
+          </div>
+
+          {/* El Grid de Talleres: Aquí es donde manejamos los 30 items */}
+          <div className="talleres-grid-container">
+            {charlasTalleresTypes.map((type, index) => (
+              <div 
+                key={index} 
+                className={`psicoterapia-dropdown compact ${openDropdown === index ? 'is-open' : ''}`}
+              >
+                <div 
+                  className="dropdown-header"
+                  onClick={() => toggleDropdown(index)}
+                >
+                  <h4>{type.title}</h4>
+                  <span className="dropdown-icon">
+                    {openDropdown === index ? <FaChevronUp /> : <FaChevronDown />}
+                  </span>
+                </div>
+                
+                {openDropdown === index && (
+                  <div className="dropdown-content">
+                    <p style={{ whiteSpace: "pre-line" }}>{type.description}</p>
+                    {type.bullets && (
+                      <ul className="compact-bullets">
+                        {type.bullets.map((b, i) => <li key={i}>{b}</li>)}
+                      </ul>
+                    )}
+                  </div>
+                )}
               </div>
-              <h3>Consultas de Emergencia</h3>
-              <p>Atención inmediata en situaciones de crisis</p>
+            ))}
+          </div>
+        </div>
+</section>
+
+      {/* Gestión y ejecución de proyectos */}
+      <section className="service-section terapia-familiar" id='gestion-proyectos'>
+        <div className="container">
+          <div className="service-header">
+            <div className="service-icon familia">
+              <span><FaGear color='white'/></span>
+            </div>
+            <h2>Gestión y Ejecución de Proyectos</h2>
+          </div>
+          
+          <div className="service-content reverse">
+            <div className="service-info">
+              <p className="service-description">
+                Ofrecemos un servicio integral de diseño, planificación, ejecución y evaluación de proyectos psicosociales e institucionales. Desarrollamos talleres, charlas, programas preventivos y evaluaciones especializadas según las necesidades de cada organización. Nuestro equipo se encarga de todo el proceso, asegurando intervenciones efectivas, medibles y adaptadas a cada contexto.
+              </p>
+
+              <div className="specific-services azul">
+                <h3>Servicios específicos:</h3>
+                <ul className="services-list">
+                  <li>
+                    <strong>Diseño y planificación de proyectos:</strong> Creamos propuestas de intervención adaptadas a las necesidades de la institución o comunidad: talleres, programas de prevención, campañas educativas, protocolos, capacitaciones, evaluaciones de clima laboral, etc.
+                  </li>
+                  <li>
+                    <strong>Ejecución y facilitación:</strong> Nos encargamos de llevar a cabo las actividades planificadas, como talleres para la comunidad, programas para estudiantes y jornadas de capacitación profesional.
+                  </li>
+                  <li>
+                    <strong>Evaluación y medición:</strong> Aplicamos instrumentos para evaluar personal (burnout, estrés, desempeño), impacto de programas, necesidades de la población y resultados pre/post intervención.
+                  </li>
+                  <li>
+                    <strong>Gestión y coordinación:</strong> Incluye logística, cronogramas, materiales, informes, coordinación con aliados y cierre del proyecto.
+                  </li>
+                  <li>
+                    <strong>Evaluación de proyectos:</strong> Análisis de resultados e impacto a través de instrumentos de medición y elaboración de informes finales.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="service-image">
+              <img 
+                src={PsicoterapiaLineaImg}
+                alt="Psicoterapia en Línea" 
+              />
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+
+      {/* Shadow (profesor@ sombra) */}
+      <section className="service-section terapia-pareja" id="profesor-sombra">
+        <div className="container">
+          <div className="service-header">
+            <div className="service-icon pareja">
+              <span><FaGhost  color='white'/></span>
+            </div>
+            <h2>Shadow (Profesor@ Sombra)</h2>
+          </div>
+          
+          <div className="service-content">
+            <div className="service-image">
+              <img 
+                src={DueloImg}
+                alt="Duelo" 
+              />
+            </div>
+            <div className="service-info">
+              <p className="service-description">
+                Brindamos acompañamiento especializado dentro del aula para estudiantes que requieren apoyo adicional en su proceso de adaptación académica, social, emocional y conductual.  Este servicio incluye la creación de programas de intervención y evaluación individualizados, ajustados a las necesidades y fortalezas de cada estudiante, trabajando en coordinación con la familia y la institución educativa. El objetivo es promover la participación activa, la independencia y la autonomía del estudiante, ofreciendo estrategias que faciliten su aprendizaje, regulación emocional, integración escolar y desarrollo integral.
+              </p>
+              <div className="specific-services naranja">
+                <h3>Pilares del acompañamiento:</h3>
+                <ul className="services-list">
+                  <li>
+                    <strong>Evaluación integral del estudiante:</strong> Valoración de aspectos académicos, emocionales, sociales y conductuales, así como de su contexto familiar y escolar.
+                  </li>
+                  <li>
+                    <strong>Objetivos individualizados:</strong> Definición de metas claras, realistas y funcionales según las necesidades específicas.
+                  </li>
+                  <li>
+                    <strong>Diseño de programa personalizado:</strong> Elaboración de un plan adaptado a las fortalezas, dificultades y ritmo de aprendizaje del alumno.
+                  </li>
+                  <li>
+                    <strong>Intervención directa:</strong> Acompañamiento dentro y fuera del aula para desarrollar habilidades académicas y socioemocionales.
+                  </li>
+                  <li>
+                    <strong>Ambiente escolar:</strong> Trabajo con compañeros y docentes para favorecer la inclusión, la empatía y el manejo de conductas.
+                  </li>
+                  <li>
+                    <strong>Coordinación permanente:</strong> Seguimiento conjunto con la familia y la institución, con orientación a padres y labor colaborativa con docentes.
+                  </li>
+                  <li>
+                    <strong>Independencia y autonomía:</strong> Reducción progresiva del apoyo según los logros alcanzados por el estudiante.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }

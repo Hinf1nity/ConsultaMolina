@@ -25,8 +25,28 @@ const Footer = () => {
           
           <div className="footer-contact">
             <h4>Contacto</h4>
-            <p><FaPhoneAlt color='rgb(0 167 181)'/> +591 72564060, +591 67025984, +591 72533356</p>
-            <p><FaEnvelope color='rgb(0 167 181)'/> molina.psicoterapia@gmail.com</p>
+            
+            <div className="contact-item">
+              <p>
+                <FaPhoneAlt color='rgb(0 167 181)'/> <strong>Alvaro Molina:</strong> +591 72533356
+              </p>
+            </div>
+            
+            <div className="contact-item">
+              <p>
+                <FaPhoneAlt color='rgb(0 167 181)'/> <strong>Noel Molina:</strong> +591 72564060
+              </p>
+            </div>
+            
+            <div className="contact-item">
+              <p>
+                <FaPhoneAlt color='rgb(0 167 181)'/> <strong>Valeria Del Villar:</strong> +591 67025984
+              </p>
+            </div>
+
+            <p className="contact-email">
+              <FaEnvelope color='rgb(0 167 181)'/> molina.psicoterapia@gmail.com
+            </p>
           </div>
           
           <div className="footer-social">

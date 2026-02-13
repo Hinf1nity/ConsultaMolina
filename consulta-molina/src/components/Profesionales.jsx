@@ -8,17 +8,20 @@ const Profesionales = () => {
     {
       name: 'Alvaro Molina',
       description: 'Psicólogo, Terapeuta Familiar y Especialista en Terapias Breves, con Maestría en Psicología de la Salud. Docente e investigador en la Universidad Católica Boliviana desde 2008.',
-      image: alvaroImage
+      image: alvaroImage,
+      phone: '+591 72533356',
     },
     {
       name: 'Noel Molina',
       description: 'Psicólogo, titulado por excelencia con formación académica en México y España. Actualmente ejerciendo en psicología clínica, orientación vocacional y neuropsicología deportiva.',
-      image: noelImage
+      image: noelImage,
+      phone: '+591 72564060',
     },
     {
       name: 'Valeria Del Villar',
-      description: 'Psicóloga graduada por excelencia con estudios internacionales en México y en España. Cuenta con experiencia en psicología clínica y de la salud.',
-      image: valeriaImage
+      description: 'Psicóloga graduada por excelencia con estudios internacionales en México y en España. Especialista en clínica infanto-juvenil, clínica familiar, neurodesarrollo y orientación vocacional.',
+      image: valeriaImage,
+      phone: '+591 67025984',
     }
   ]
 
@@ -31,6 +34,9 @@ const Profesionales = () => {
             <div key={index} className="profesional-card">
               <div className="profesional-image">
                 <img src={profesional.image} alt={profesional.name} />
+                <div className="profesional-overlay">
+                  <span className="phone-number">{profesional.phone}</span>
+                </div>
               </div>
               <div className="profesional-info">
                 <h3>{profesional.name}</h3>

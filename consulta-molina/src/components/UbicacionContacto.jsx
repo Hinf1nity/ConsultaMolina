@@ -69,7 +69,7 @@ const UbicacionContacto = () => {
               <h4>Redes Sociales</h4>
               <div className="social-links">
                 <a href="#" className="social-link-ubicacion-contacto"><FaLinkedin color='rgb(0 167 181)' size={38}/></a>
-                <a href="https://www.wa.link/tabzda" className="social-link-ubicacion-contacto"><FaWhatsapp color='rgb(0 167 181)' size={38}/></a>
+                <a href="https://wa.link/5nvqzr" className="social-link-ubicacion-contacto" target="_blank" rel="noopener noreferrer"><FaWhatsapp color='rgb(0 167 181)' size={38}/></a>
               </div>
             </div>
           </div>
