@@ -106,6 +106,8 @@ const Navbar = () => {
         { name: 'Orientación Vocacional', path: '/servicios#VITAE' },
         { name: 'Juventud en la Diversidad', path: '/servicios#juventud-diversidad' },
         { name: 'Conferencias y Talleres', path: '/servicios#charlas-talleres' },
+        { name: 'Gestión y Ejecución de Proyectos', path: '/servicios#gestion-proyectos' },
+        { name: 'Profesor@ Sombra', path: '/servicios#profesor-sombra' }
       ]
     },
   ]

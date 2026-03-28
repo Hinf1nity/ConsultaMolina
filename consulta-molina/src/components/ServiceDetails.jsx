@@ -13,6 +13,8 @@ import OrientacionVocacionalImg from '../imgs/orientacion_vocacional.png'
 import JuventudDiversidadImg from '../imgs/juventud_diversidad.png'
 import DueloImg from '../imgs/duelo.png'
 import CharlasTalleresImg from '../imgs/charlas_talleres.jpg'
+import ShadowImg from '../imgs/shadow.png'
+import GestionEjecucionImg from '../imgs/gestion_ejecucion_proyectos.jpeg'
 
 const ServiceDetails = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -731,7 +733,7 @@ const ServiceDetails = () => {
             <div className="service-icon">
               <span><FaChalkboardTeacher color='white'/></span>
             </div>
-            <h2>Charlas y Talleres</h2>
+            <h2>Conferencias y Talleres</h2>
           </div>
           
           {/* Intro: Imagen y Descripción en una fila superior */}
@@ -741,7 +743,7 @@ const ServiceDetails = () => {
             </div>
             <div className="service-info">
               <p className="service-description">
-                Nuestras charlas y talleres están diseñados para brindar espacios de aprendizaje, reflexión y crecimiento personal. Abordamos temas diversos como la independencia familiar, el manejo escolar del autismo y neuropsicología deportiva.
+                Nuestras conferencias y talleres están diseñados para brindar espacios de aprendizaje, reflexión y crecimiento personal. Abordamos temas diversos como la independencia familiar, el manejo escolar del autismo y neuropsicología deportiva.
               </p>
             </div>
           </div>
@@ -816,10 +818,10 @@ const ServiceDetails = () => {
                 </ul>
               </div>
             </div>
-            <div className="service-image">
+            <div className="service-image talleres-intro-image">
               <img 
-                src={PsicoterapiaLineaImg}
-                alt="Psicoterapia en Línea" 
+                src={GestionEjecucionImg}
+                alt="Gestión y Ejecución de Proyectos" 
               />
             </div>
           </div>
@@ -837,10 +839,10 @@ const ServiceDetails = () => {
           </div>
           
           <div className="service-content">
-            <div className="service-image">
+            <div className="service-image talleres-intro-image">
               <img 
-                src={DueloImg}
-                alt="Duelo" 
+                src={ShadowImg}
+                alt="Shadow (Profesor@ Sombra)" 
               />
             </div>
             <div className="service-info">

@@ -8,6 +8,8 @@ import OrientacionVocacionalImg from '../imgs/orientacion_vocacional.png'
 import JuventudDiversidadImg from '../imgs/juventud_diversidad.png'
 import DueloImg from '../imgs/duelo.png'
 import CharlasTalleresImg from '../imgs/charlas_talleres_1.jpg'
+import ShadowImg from '../imgs/shadow.png'
+import GestionEjecucionImg from '../imgs/gestion_ejecucion_proyectos_1.jpeg'
 
 const ServiciosPreview = () => {
   const servicios = [
@@ -15,50 +17,62 @@ const ServiciosPreview = () => {
       title: 'Psicoterapia',
       description: 'Atención personalizada para abordar tus necesidades específicas en un ambiente seguro y confidencial.',
       image: PsicoterapiaImg,
-      link: '/servicios'
+      link: '/servicios#psicoterapia'
     },
     {
       title: 'Psicoterapia en Línea',
       description: 'Sesiones de psicoterapia virtuales desde la comodidad de tu hogar con la misma calidad profesional.',
       image: PsicoterapiaLineaImg,
-      link: '/servicios'
+      link: '/servicios#psicoterapia-linea'
     },
     {
       title: 'Terapia Familiar',
       description: 'Fortalecimiento de vínculos familiares y resolución de conflictos con un enfoque colaborativo.',
       image: TerapiaFamiliarImg,
-      link: '/servicios'
+      link: '/servicios#psicoterapia'
     },
     {
       title: 'Neuropsicología Deportiva',
       description: 'Optimización del rendimiento mental de atletas y deportistas para alcanzar su máximo potencial.',
       image: NeuropsicologiaDeportivaImg,
-      link: '/servicios'
+      link: '/servicios#neuropsicologia-deportiva'
     },
     {
       title: 'Vitae Orientación Vocacional',
       description: 'Acompañamiento integral en la toma de decisiones vocacionales y de plan de vida.',
       image: OrientacionVocacionalImg,
-      link: '/servicios'
+      link: '/servicios#VITAE'
     },
     {
       title: 'Conferencias y Talleres',
       description: 'Conferencia psicoeducativas dirigidas a colegios, empresas, instituciones y comunidades.',
       image: CharlasTalleresImg,
-      link: '/servicios'
+      link: '/servicios#charlas-talleres'
     },
     {
       title: 'Juventud en la Diversidad',
       description: 'Apoyo especializado para jovenes con condiciones del neurodesarrollo como el trastorno del espectro autista o el síndrome de Down.',
       image: JuventudDiversidadImg,
-      link: '/servicios'
+      link: '/servicios#juventud-diversidad'
     },
     {
       title: 'Duelo',
       description: 'Acompañamiento especializado en procesos de duelo y pérdida con apoyo emocional integral.',
       image: DueloImg,
-      link: '/servicios'
+      link: '/servicios#duelo'
     },
+    {
+      title: 'Gestión y Ejecución de Proyectos',
+      description: 'Asesoría y apoyo en la gestión y ejecución de proyectos sociales, educativos y comunitarios.',
+      image: GestionEjecucionImg,
+      link: '/servicios#gestion-proyectos'
+    },
+    {
+      title: 'Profesor@ Sombra',
+      description: 'Acompañamiento especializado para estudiantes con necesidades educativas especiales en el ámbito escolar.',
+      image: ShadowImg,
+      link: '/servicios#profesor-sombra'
+    }
   ]
 
   return (
