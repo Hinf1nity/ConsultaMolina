@@ -8,20 +8,10 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div>
-        {/* <div className="App"> */}
-        {/* <Navbar /> */}
+      <div className="App">
+        <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={<Navigate to="/work-in-progress" replace />}
-          />
-          <Route path="/work-in-progress" element={<WorkInProgress />} />
-          <Route
-            path="*"
-            element={<Navigate to="/work-in-progress" replace />}
-          />
-          {/* <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/servicios" element={<ServicesPage />} />
           <Route path="/quienes-somos" element={<HomePage />} />
           <Route path="/mision-vision" element={<HomePage />} />
@@ -30,7 +20,7 @@ function App() {
           <Route path="/ubicacion-contacto" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
