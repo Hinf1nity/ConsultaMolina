@@ -11,10 +11,14 @@
   max-width: 1100px;
   margin: 0 auto;
 }
-
+.contenedor-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Esto da la separación entre las imágenes automáticamente */
+}
 .contacto-image img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -34,7 +38,7 @@
 .medical-cross {
   width: 60px;
   height: 60px;
-  background: #E74C3C;
+  background: #e74c3c;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -62,7 +66,7 @@
   padding: 20px;
   background: #f8f9fa;
   border-radius: 10px;
-  border-left: 4px solid #20B2AA;
+  border-left: 4px solid #20b2aa;
 }
 
 .contacto-icon {
@@ -83,6 +87,17 @@
   color: #666;
   line-height: 1.6;
   margin: 0;
+}
+
+.contacto-text .direccion-lista {
+  color: #666;
+  line-height: 1.6;
+  margin: 5px 0 0 0; /* Un pequeño margen arriba */
+  padding-left: 20px; /* Deja espacio para los puntos de la lista */
+}
+
+.contacto-text .direccion-lista li {
+  margin-bottom: 6px; /* Espacio entre cada dirección */
 }
 
 .redes-sociales h4 {
@@ -117,7 +132,7 @@
 }
 @media (max-width: 1260px) {
   .contacto-grid {
-    padding-left: 20px
+    padding-left: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -127,32 +142,36 @@
     text-align: center;
     padding-left: 0px;
   }
-  
+
   .info-header {
     flex-direction: column;
     text-align: center;
     gap: 15px;
   }
-  
+
   .contacto-item {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-  
+
   .contacto-icon {
     font-size: 2rem;
   }
-  
+
   .social-links {
     justify-content: center;
   }
-  .contacto-details{
+  .contacto-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     margin: 0 auto;
+  }
+
+  .contacto-text .direccion-lista {
+    text-align: left;
   }
 }
 
@@ -161,13 +180,13 @@
     padding: 10px;
     align-items: center;
   }
-  
+
   .medical-cross {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-  
+
   .info-header h3 {
     font-size: 1.5rem;
   }

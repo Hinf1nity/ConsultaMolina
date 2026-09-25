@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import HomePage from './pages/HomePage'
-import ServicesPage from './pages/ServicesPage'
-import Footer from './components/Footer'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
@@ -18,11 +18,12 @@ function App() {
           <Route path="/valores" element={<HomePage />} />
           <Route path="/profesionales" element={<HomePage />} />
           <Route path="/ubicacion-contacto" element={<HomePage />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
         <Footer />
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

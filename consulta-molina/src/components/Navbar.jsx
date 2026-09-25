@@ -1,54 +1,54 @@
-import { useState, useEffect } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
-import './Navbar.css'
-import IsoLogo from '../assets/Molina_Isologo-transparente-2.png'
+import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import "./Navbar.css";
+import IsoLogo from "../assets/Molina_Isologo-transparente-2.png";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState(null)
-  const location = useLocation()
-  const navigate = useNavigate()
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId) => {
-    if (location.pathname === '/') {
-      const element = document.getElementById(sectionId)
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }
+  };
 
   const handleNavClick = (item) => {
     if (item.path && item.path.startsWith("/servicios")) {
-      setIsMenuOpen(false)
-      return
+      setIsMenuOpen(false);
+      return;
     }
-    if (item.path !== '/profesionales') {
-      return
+    if (item.path !== "/profesionales") {
+      return;
     }
-    setIsMenuOpen(false)
-    
+    setIsMenuOpen(false);
+
     const sectionMap = {
-      '/quienes-somos': 'quienes-somos',
-      '/mision-vision': 'mision-vision',
-      '/valores': 'valores',
-      '/profesionales': 'profesionales',
-      '/ubicacion-contacto': 'ubicacion-contacto'
-    }
-    
-    if (location.pathname !== '/') {
-      navigate('/', { state: { scrollTo: sectionMap[item.path] } })
+      "/quienes-somos": "quienes-somos",
+      "/mision-vision": "mision-vision",
+      "/valores": "valores",
+      "/profesionales": "profesionales",
+      "/ubicacion-contacto": "ubicacion-contacto",
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionMap[item.path] } });
     } else {
-      scrollToSection(sectionMap[item.path])
+      scrollToSection(sectionMap[item.path]);
     }
-  }
+  };
 
   const goHome = () => {
-    setIsMenuOpen(false)
-    navigate('/')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    setIsMenuOpen(false);
+    navigate("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   useEffect(() => {
     const checkDevice = () => {
@@ -65,124 +65,155 @@ const Navbar = () => {
     if (location.state?.scrollTo) {
       // small timeout to ensure DOM is ready
       setTimeout(() => {
-        scrollToSection(location.state.scrollTo)
-      }, 50)
+        scrollToSection(location.state.scrollTo);
+      }, 50);
     }
-  }, [location])
+  }, [location]);
 
   const navItems = [
     {
-      name: 'Quiénes Somos',
-      path: '/quienes-somos',
+      name: "Quiénes Somos",
+      path: "/quienes-somos",
     },
-    { 
-      name: 'Psicoterapia', 
+    {
+      name: "Psicoterapia",
       dropdown: [
-        { name: 'Psicoterapia Individual', path: '/servicios#psicoterapia' },
-        { name: 'Psicoterapia de Pareja', path: '/servicios#psicoterapia' },
-        { name: 'Psicoterapia Infantojuvenil', path: '/servicios#psicoterapia' },
-        { name: 'Psicoterapia Familiar', path: '/servicios#psicoterapia' },
-      ]
+        { name: "Psicoterapia Individual", path: "/servicios#psicoterapia" },
+        { name: "Psicoterapia de Pareja", path: "/servicios#psicoterapia" },
+        {
+          name: "Psicoterapia Infantojuvenil",
+          path: "/servicios#psicoterapia",
+        },
+        { name: "Psicoterapia Familiar", path: "/servicios#psicoterapia" },
+        { name: "Co-terapia Familiar", path: "/servicios#psicoterapia" },
+      ],
     },
-    { 
-      name: 'Psicoterapia en Línea', 
-      path: '/servicios#psicoterapia-linea',
+    {
+      name: "Psicoterapia en Línea",
+      path: "/servicios#psicoterapia-linea",
     },
     // {
     //   name: 'Terapia Familiar',
     //   path: '/servicios#psicoterapia'
     // },
-    { 
-      name: 'Neuropsicología Deportiva', 
-      path: '/servicios#neuropsicologia-deportiva',
+    {
+      name: "Neuropsicología Deportiva",
+      path: "/servicios#neuropsicologia-deportiva",
     },
     {
-      name: 'Duelo',
-      path: '/servicios#duelo'
+      name: "Duelo",
+      path: "/servicios#duelo",
     },
     {
-      name: 'Otros Servicios',
+      name: "Otros Servicios",
       dropdown: [
-        { name: 'Orientación Vocacional', path: '/servicios#VITAE' },
-        { name: 'Juventud en la Diversidad', path: '/servicios#juventud-diversidad' },
-        { name: 'Conferencias y Talleres', path: '/servicios#charlas-talleres' },
-        { name: 'Gestión y Ejecución de Proyectos', path: '/servicios#gestion-proyectos' },
-        { name: 'Profesor@ Sombra', path: '/servicios#profesor-sombra' }
-      ]
+        { name: "Orientación Vocacional", path: "/servicios#VITAE" },
+        {
+          name: "Juventud en la Diversidad",
+          path: "/servicios#juventud-diversidad",
+        },
+        {
+          name: "Conferencias y Talleres",
+          path: "/servicios#charlas-talleres",
+        },
+        {
+          name: "Gestión y Ejecución de Proyectos",
+          path: "/servicios#gestion-proyectos",
+        },
+      ],
     },
-  ]
+  ];
 
   const handleDropdownEnter = (index) => {
     if (!isMobile) {
-      setActiveDropdown(index)
+      setActiveDropdown(index);
     }
-  }
+  };
 
   const handleDropdownLeave = () => {
     if (!isMobile) {
-      setActiveDropdown(null)
+      setActiveDropdown(null);
     }
-  }
+  };
 
   const handleDropdownClick = (index) => {
     if (isMobile) {
-      setActiveDropdown(activeDropdown === index ? null : index)
+      setActiveDropdown(activeDropdown === index ? null : index);
     }
-  }
+  };
 
   return (
     <nav className="navbar">
       <div className="container">
         <Link to="/" className="navbar-brand">
           <div className="logo">
-              <img src={IsoLogo} alt="Molina Isologo" className="logo-image-navbar" onClick={goHome}/>
+            <img
+              src={IsoLogo}
+              alt="Molina Isologo"
+              className="logo-image-navbar"
+              onClick={goHome}
+            />
           </div>
         </Link>
-        
-        <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
+
+        <div className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
           {navItems.map((item, index) => (
-            <div key={index} className="nav-item"
+            <div
+              key={index}
+              className="nav-item"
               onMouseEnter={() => handleDropdownEnter(index)}
               onMouseLeave={handleDropdownLeave}
               onClick={() => handleDropdownClick(index)}
             >
-            <a 
-                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+              <a
+                className={`nav-link ${location.pathname === item.path ? "active" : ""}`}
                 onClick={() => {
-                  setActiveDropdown(null)
-                  {item.path ? navigate(item.path) : '#'}
-                  handleNavClick(item)
+                  setActiveDropdown(null);
+                  {
+                    item.path ? navigate(item.path) : "#";
+                  }
+                  handleNavClick(item);
                 }}
               >
-              {item.name}
-              {item.dropdown && (
-                <svg className="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              )}
-            </a>
-            {item.dropdown && (
-              <div className={`dropdown-menu ${activeDropdown === index ? 'active' : ''}`}>
-                {item.dropdown.map((dropdownItem, dropdownIndex) => (
-                  <a
-                    key={dropdownIndex}
-                    className='dropdown-link'
-                    onClick={() => {
-                      setIsMenuOpen(false)
-                      navigate(dropdownItem.path)
-                    }}
+                {item.name}
+                {item.dropdown && (
+                  <svg
+                    className="dropdown-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
                   >
-                    {dropdownItem.name}
-                  </a>
-                ))}
-              </div>
-            )}
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                )}
+              </a>
+              {item.dropdown && (
+                <div
+                  className={`dropdown-menu ${activeDropdown === index ? "active" : ""}`}
+                >
+                  {item.dropdown.map((dropdownItem, dropdownIndex) => (
+                    <a
+                      key={dropdownIndex}
+                      className="dropdown-link"
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                        navigate(dropdownItem.path);
+                      }}
+                    >
+                      {dropdownItem.name}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
 
-        <div 
-          className={`navbar-toggle ${isMenuOpen ? 'active' : ''}`}
+        <div
+          className={`navbar-toggle ${isMenuOpen ? "active" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span></span>
@@ -191,7 +222,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
