@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, #20B2AA 0%, #008B8B 100%);
+  background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -11,13 +11,13 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../imgs/portada.jpg');
+  background-image: url("../imgs/portada_new.png");
   background-size: cover;
   background-position: center;
   opacity: 0.5;
@@ -61,12 +61,14 @@
 .logo-m {
   font-size: 3rem;
   font-weight: bold;
-  color: #20B2AA;
+  color: #20b2aa;
 }
 
 .logo-image {
   width: 100%;
   height: auto;
+  max-height: 350px;
+  object-fit: contain;
 }
 
 .hero-title {
@@ -95,7 +97,7 @@
 
 .hero-btn {
   background: white;
-  color: #20B2AA;
+  color: #20b2aa;
   font-weight: 600;
   padding: 15px 40px;
   font-size: 1.1rem;
@@ -110,16 +112,24 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   color: white;
 }
+@media (max-width: 1200px) {
+  .hero-content {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu menú de navegación */
+  }
 
+  .logo-image {
+    width: 80%;
+  }
+}
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.3rem;
   }
-  
+
   .hero-description {
     font-size: 1.1rem;
   }
@@ -128,17 +138,17 @@
     width: 80%;
     height: auto;
   }
-  
+
   .logo-circle-large {
     width: 100px;
     height: 100px;
   }
-  
+
   .logo-inner {
     width: 70px;
     height: 70px;
   }
-  
+
   .logo-m {
     font-size: 2.5rem;
   }
@@ -149,18 +159,18 @@
     min-height: 40vh;
     margin-top: 100px;
   }
-  
+
   .hero-content {
     transform: translateY(20px);
   }
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .hero-btn {
     padding: 12px 30px;
     font-size: 1rem;
